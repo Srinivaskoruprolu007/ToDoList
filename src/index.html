@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-black text-white flex items-center justify-center min-h-screen m-0 p-0">
+    <div class="container bg-gray-800 p-6 rounded-lg flex flex-col text-center max-w-md">
+        <h1 class="text-2xl font-bold mb-4">To-Do List</h1>
+        <div class="flex mb-4">
+            <input 
+                type="text" 
+                id="taskInput" 
+                placeholder="Enter a task" 
+                class="flex-grow p-2 rounded-l-md bg-gray-700 text-white outline-none"
+            />
+            <button 
+                id="addButton" 
+                class="bg-violet-500 text-white px-4 py-2 rounded-r-md hover:bg-violet-600 transition">
+                Add Task
+            </button>
+        </div>
+        <ul id="taskList" class="list-none p-0">
+            <!-- Tasks will be dynamically added here -->
+        </ul>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
